@@ -23,7 +23,8 @@
 2. Ao final da listagem do extrato deve ser exibido o SALDO atual.
 3. O formato a ser exibido deve ser R$ XXX.XX
 ```
-<h1 align=center>Alterações</h4>
+<h1 align=center>Alterações v1</h4>
+Arquivo criado em 26/03/2025
 <h4>As seguintes alterações foram realizadas por falta de especificação do sistema para melhorar a usabilidade:</h4>
 
 
@@ -33,4 +34,23 @@
 
 3. Ao invés de variáveis globais, foi utilizado uma classe para armazenar as informações do cliente/usuário.
 
+<h1 align=center>Alterações v2</h4>
+Arquivo atualizado em 27/03/2025
+<h4> Melhorada a estrutura do código e adicionadas duas novas funcionalidades, cadastro de cliente(criar usuário) e cadastro de conta(criar conta corrente).</h4>
 
+# Criar usuário (cliente)
+```yaml
+1. Os usuários devem ser armazenados em uma LISTA.
+2. Dados para cadastrar um usuário: nome, data de nascimento, cpf e endereço.
+3. Endereço deve ser uma STRING com o formato: logradouro, número, bairro, cidade/UF.
+4. O CPF deve ser amazenado somente os números.
+5. Não deve ser possível cadastrar 2 usuários com o mesmo CPF.
+```
+# Criar Conta Corrente
+```yaml
+1. As contas devem ser armazenados em uma LISTA.
+2. A conta é composta por: Agência, número da conta e usuário.
+3. Número da conta deve ser sequencial iniciando em 1.
+4. O número da agência deve ser fixo "0001".
+5. Um usuário pode ter diversas contas.
+6. Cada conta pode pertencer a apenas 1 usuário.
